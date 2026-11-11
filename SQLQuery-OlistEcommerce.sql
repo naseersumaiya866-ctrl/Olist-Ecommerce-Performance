@@ -213,11 +213,6 @@ SELECT
 FROM olist_order_reviews_dataset;
 
 
-
-
-
-
-
 If OBJECT_ID('vw_order_commercial','v') is not null
 drop View vw_order_commercial;
 go
@@ -270,7 +265,7 @@ LEFT JOIN payment_summary p
 	select * from vw_order_commercial
 
 
-	IF OBJECT_ID('vw_category_performance', 'V') IS NOT NULL
+IF OBJECT_ID('vw_category_performance', 'V') IS NOT NULL
     DROP VIEW vw_category_performance;
 GO
 
@@ -327,8 +322,9 @@ FROM
 	LEFT JOIN product_category_name_translation t
     ON pc.category_name = t.[product_category_name];
 
+	select * from vw_category_performance;
 
-	IF OBJECT_ID('vw_delivery_and_satisfaction', 'V') IS NOT NULL
+IF OBJECT_ID('vw_delivery_and_satisfaction', 'V') IS NOT NULL
     DROP VIEW vw_delivery_and_satisfaction;
 go
 
@@ -361,11 +357,3 @@ WHERE o.["order_status"] = 'delivered'; -- Focus analysis on completed deliverie
 go
 
 select * from vw_delivery_and_satisfaction;
-
-
-
-
-	
-GO
-
-select * from vw_category_performance;
