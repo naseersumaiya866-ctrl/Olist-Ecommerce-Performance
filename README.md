@@ -12,7 +12,7 @@ The analysis was designed to answer the following business questions:
 4) How do sales and order rankings differ across product categories?
 5) What is the relationship between average delivery time and customer review scores?
 6) How are delivery statuses distributed across different payment methods?
-7)How are sellers geographically distributed across Brazilian states?
+   7)How are sellers geographically distributed across Brazilian states?
 
 ## Dashboard Components
 
